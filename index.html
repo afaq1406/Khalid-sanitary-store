@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khalid Sanitary and Electrical Store – Charsadda, KPK</title>
+  <title>Khalid Sanitary Store | Sanitary & Electrical Store in Charsadda</title>
+  <link rel="canonical" href="https://afaq1406.github.io/Khalid-sanitary-store/" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Khalid Sanitary Store" />
   <meta
     name="description"
-    content="Official store for Khalid Sanitary and Electrical Store located on Shabqaddar Road, Doaba, Charsadda, KPK, Pakistan. Premium sanitary fittings, bathroom fixtures, PPRC pipes, cables, breakers, and switches. Call or WhatsApp: 03028923749."
+    content="Khalid Sanitary Store in Doaba, Charsadda, KPK, Pakistan. Browse sanitary, bathroom, plumbing, PPRC pipe and electrical products, prices and contact details. Call or WhatsApp 03028923749."
   />
   <meta
     name="keywords"
-    content="Khalid Sanitary, Khalid Electrical Store, Charsadda sanitary, Doaba electrical store, Shabqaddar Road, Sukar Mahalla Malkaheel, Kaki Jan Ustad Jumat, KPK Pakistan hardware store, Pakistan Cables, Master Sanitary, Sonex"
+    content="Khalid Sanitary Store, Khalid Sanitary and Electrical Store, sanitary store Charsadda, sanitary shop Doaba, electrical store Charsadda, plumbing store Charsadda, Shabqaddar Road Doaba, bathroom fittings Charsadda, PPRC pipes, electrical cables, switches, breakers"
   />
   <meta name="author" content="Khalid Sanitary and Electrical Store" />
   <meta name="robots" content="index, follow" />
@@ -24,6 +29,7 @@
     content="Authentic sanitary fittings, plumbing solutions, cables, and electrical hardware in Doaba, Charsadda, KPK. Call or WhatsApp: 03028923749."
   />
   <meta property="og:locale" content="en_PK" />
+  <meta property="og:url" content="https://afaq1406.github.io/Khalid-sanitary-store/" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80" />
 
   <!-- Twitter Card -->
@@ -34,6 +40,7 @@
     content="Authorized retail and wholesale hardware in Doaba, Charsadda, KPK. Call 03028923749."
   />
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:url" content="https://afaq1406.github.io/Khalid-sanitary-store/" />
 
   <!-- Google LocalBusiness JSON-LD Schema Markup -->
   <script type="application/ld+json">
@@ -42,6 +49,7 @@
     "@type": "HardwareStore",
     "additionalType": "https://schema.org/LocalBusiness",
     "name": "Khalid Sanitary and Electrical Store",
+    "url": "https://afaq1406.github.io/Khalid-sanitary-store/",
     "description": "Leading retailer of sanitary fittings, bathroom accessories, PVC/PPRC pipes, electrical wiring, switches, breakers, and lighting solutions in Doaba, Charsadda, KPK, Pakistan.",
     "telephone": "03028923749",
     "priceRange": "PKR",
@@ -111,17 +119,137 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
     }
+
+    img {
+      max-width: 100%;
+    }
+
+    a, button, input, select, textarea {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button, a {
+      touch-action: manipulation;
+    }
+
     .hero-pattern {
       background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(15, 23, 42, 0.88) 100%), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80');
       background-size: cover;
       background-position: center;
     }
+
+    /* Responsive header: keeps the shop name and controls usable on phones. */
+    #mainHeaderInner {
+      flex-wrap: nowrap;
+    }
+
+    #headerActions {
+      flex-shrink: 0;
+    }
+
+    /* Prevent long product/admin content from breaking small screens. */
+    #productGrid > div,
+    #adminView .bg-white {
+      min-width: 0;
+    }
+
+    /* Better touch targets on small screens. */
+    @media (max-width: 640px) {
+      #mainHeaderInner {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      #brandLink {
+        min-width: 0;
+        flex: 1 1 100%;
+      }
+
+      #brandLink > div:last-child {
+        min-width: 0;
+      }
+
+      #brandLink span {
+        overflow-wrap: anywhere;
+      }
+
+      #headerActions {
+        width: 100%;
+        justify-content: stretch;
+      }
+
+      #headerActions button {
+        flex: 1 1 0;
+        justify-content: center;
+        min-height: 42px;
+      }
+
+      #headerActions button span {
+        white-space: nowrap;
+      }
+
+      #toastContainer {
+        top: 10px;
+        right: 0;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .hero-pattern {
+        background-position: center;
+      }
+
+      #productGrid {
+        gap: 14px;
+      }
+
+      #productGrid img {
+        min-height: 180px;
+      }
+
+      #adminView .sticky {
+        position: static !important;
+      }
+    }
+
+    @media (max-width: 380px) {
+      #brandLink .w-12 {
+        width: 42px;
+        height: 42px;
+      }
+
+      #headerActions button {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      #headerActions button span {
+        font-size: 11px;
+      }
+
+      .hero-pattern h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .hero-pattern {
+        min-height: 540px;
+      }
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-white">
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-white pb-14 sm:pb-0">
 
   <!-- TOP INFORMATION BAR -->
   <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
@@ -143,7 +271,7 @@
           <span>03028923749</span>
         </a>
         <span class="text-slate-700">|</span>
-        <a href="https://wa.me/923028923749?text=Assalam-o-Alaikum%2C%20I%20am%20inquiring%20about%20products%20at%20Khalid%20Sanitary%20and%20Electrical%20Store." target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
+        <a href="https://wa.me/923028923749?text=Assalam-o-Alaikum%2C%20I%20am%20inquiring%20about%20products%20at%20Khalid%20Sanitary%20and%20Electrical%20Store." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
           <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
           <span>WhatsApp Us</span>
         </a>
@@ -153,10 +281,10 @@
 
   <!-- NAVIGATION HEADER -->
   <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40 shadow-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+    <div id="mainHeaderInner" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
 
       <!-- BRAND LOGO (Custom Wrench + Water Tap + Lightning Bolt Emblem) -->
-      <a href="javascript:void(0)" onclick="navigateTo('store')" class="flex items-center gap-3.5 group text-left">
+      <a id="brandLink" href="javascript:void(0)" onclick="navigateTo('store')" class="flex items-center gap-3.5 group text-left">
         <div class="relative w-12 h-12 rounded-xl bg-navy-900 border border-slate-700 shadow-md flex items-center justify-center p-2 overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform">
           <!-- EMBLEM SVG: Water Tap + Wrench + Lightning Bolt -->
           <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -336,6 +464,16 @@
     </section>
 
     <!-- SEARCH, FILTER & CATALOG CONTROLS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 w-full">
+      <div class="bg-emerald-50 border border-emerald-100 rounded-2xl px-4 sm:px-6 py-4">
+        <h2 class="text-base sm:text-lg font-bold text-navy-900">Khalid Sanitary Store in Doaba, Charsadda</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+          Sanitary, bathroom, plumbing and electrical products available from Khalid Sanitary and Electrical Store on Shabqaddar Road, Doaba, Charsadda, KPK.
+        </p>
+      </div>
+    </section>
+
+    <!-- SEARCH, FILTER & CATALOG CONTROLS -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
       <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs mb-8">
         <div class="flex flex-col lg:flex-row gap-4 items-stretch lg:items-center justify-between">
@@ -346,6 +484,7 @@
             <input
               type="text"
               id="searchInput"
+              aria-label="Search products"
               oninput="applyFilters()"
               placeholder="Search by item name, brand, pipe, cable, switch..."
               class="w-full pl-9 pr-4 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-hidden focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
@@ -436,7 +575,7 @@
           </div>
           <div class="pt-6 border-t border-slate-800 mt-4 flex items-center justify-between text-xs text-slate-400 relative z-10">
             <span>Open 7 Days a Week</span>
-            <a href="https://wa.me/923028923749" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
+            <a href="https://wa.me/923028923749" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
               <span>Ask for Directions</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -918,6 +1057,8 @@
             <!-- Image Header -->
             <div class="relative h-48 bg-slate-100 overflow-hidden border-b border-slate-100">
               <img
+                loading="lazy"
+                decoding="async"
                 src="${imgSrc}"
                 alt="${p.title}"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1176,7 +1317,7 @@
           <tr class="hover:bg-slate-50/80 transition-colors">
             <td class="py-3 px-3">
               <div class="flex items-center gap-3">
-                <img src="${imgSrc}" class="w-10 h-10 rounded-lg object-cover bg-slate-100 border border-slate-200" onerror="this.src='${fallbackImg}'" />
+                <img loading="lazy" decoding="async" src="${imgSrc}" class="w-10 h-10 rounded-lg object-cover bg-slate-100 border border-slate-200" onerror="this.src='${fallbackImg}'" />
                 <div>
                   <p class="font-bold text-navy-900">${p.title}</p>
                   <p class="text-[10px] text-slate-400">ID: ${p.id}</p>
@@ -1256,5 +1397,24 @@
       }, 3000);
     }
   </script>
+
+  <!-- MOBILE QUICK CONTACT BAR -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 p-2 shadow-2xl">
+    <div class="grid grid-cols-2 gap-2 max-w-lg mx-auto">
+      <a href="tel:03028923749"
+         class="py-2.5 rounded-xl bg-navy-900 text-white text-xs font-bold flex items-center justify-center gap-2">
+        <i class="fa-solid fa-phone text-emerald-400"></i>
+        Call Store
+      </a>
+      <a href="https://wa.me/923028923749?text=Assalam-o-Alaikum%2C%20I%20am%20inquiring%20about%20products%20at%20Khalid%20Sanitary%20and%20Electrical%20Store."
+         target="_blank"
+         rel="noopener noreferrer"
+         class="py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-bold flex items-center justify-center gap-2">
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
